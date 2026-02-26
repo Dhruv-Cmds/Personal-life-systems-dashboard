@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #0b1120;
+  color: #e5e7eb;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  padding: 40px 30px;
+  background: #020617;
+  border-right: 1px solid #1e293b;
+}
+
+.sidebar h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.meta span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 40px;
+  display: grid;
+  gap: 30px;
+  overflow-y: auto;
+}
+
+/* Cards */
+.card {
+  background: #020617;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #1e293b;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+/* Inputs */
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.input-group label {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  color: #e5e7eb;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border: none;
+  padding: 12px 26px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Result */
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.score span {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.score small {
+  display: block;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.status {
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status.low {
+  background: #16a34a;
+}
+
+.status.moderate {
+  background: #eab308;
+  color: #111;
+}
+
+.status.high {
+  background: #dc2626;
+}
+
+/* Metrics */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metric {
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* Recommendations */
+ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #c7d2fe;
+}

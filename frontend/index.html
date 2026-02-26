@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LifeOS – Decision Support Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h1>LifeOS</h1>
+    <p class="tagline">Personal Decision Support System</p>
+
+    <div class="meta">
+      <span>Built with Python + Flask</span>
+      <span>Rule-based Backend</span>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Input Card -->
+    <section class="card">
+      <h2>Input Overview</h2>
+      <p class="subtitle">
+        Enter basic parameters to analyze overall life load.
+      </p>
+
+      <div class="inputs">
+        <div class="input-group">
+          <label>Monthly Income</label>
+          <input id="income" placeholder="e.g. 20000" />
+        </div>
+
+        <div class="input-group">
+          <label>Monthly Spending</label>
+          <input id="spending" placeholder="e.g. 12000" />
+        </div>
+
+        <div class="input-group">
+          <label>Height (cm)</label>
+          <input id="height" placeholder="e.g. 170" />
+        </div>
+
+        <div class="input-group">
+          <label>Weight (kg)</label>
+          <input id="weight" placeholder="e.g. 65" />
+        </div>
+      </div>
+
+        <div class="input-group">
+            <label>Last Semester GPA</label>
+            <input id="gpa" placeholder="e.g. 7.5" />
+        </div>
+
+      <button onclick="analyze()">Run Analysis</button>
+    </section>
+
+    <!-- Result Card -->
+    <section class="card result">
+      <h2>Analysis Result</h2>
+
+      <div class="headline">
+        <div class="score">
+          <span id="score">--</span>
+          <small>Life Load Score</small>
+        </div>
+        <span id="status" class="status">--</span>
+      </div>
+
+      <div class="metrics">
+        <div class="metric" id="finance"></div>
+        <div class="metric" id="health"></div>
+        <div class="metric" id="academic"></div>
+      </div>
+
+      <h3>Recommendations</h3>
+      <ul id="tips"></ul>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
