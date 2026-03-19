@@ -1,25 +1,67 @@
 # Personal Life Systems Dashboard
 
-## Overview
-A rule-based backend-driven web application that analyzes a student's
-financial, health, and academic load to provide a unified life stress score.
-The system focuses on decision support rather than isolated calculations.
+## Introduction
+A backend-driven web application that evaluates a student's financial, health, and academic conditions to generate a unified Life Load Score. The system focuses on decision support by combining multiple real-life factors into a single analysis.
+
+---
 
 ## Features
-- Finance load analysis
-- Health risk evaluation (BMI based)
+- Financial load analysis
+- Health risk evaluation (BMI-based)
 - Academic pressure scoring
-- Aggregated Life Load Score with recommendations
+- Aggregated Life Load Score
+- Rule-based recommendations
+
+---
 
 ## Tech Stack
 - Backend: Python, Flask
-- Frontend: HTML, CSS (basic)
+- Frontend: HTML, CSS
 - Logic: Rule-based system
 
-## Why this project?
-Instead of building isolated tools, this project unifies multiple
-real-life systems into one personal decision support dashboard.
-The primary focus is backend logic and system design.
+---
+
+## How It Works
+The system collects user inputs across three domains:
+- Finance (expenses, balance)
+- Health (height, weight → BMI)
+- Academics (study load, pressure)
+
+These inputs are processed through a rule-based engine to compute:
+- Individual scores for each domain
+- A final Life Load Score
+- Recommendations based on overall stress level
+
+---
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Dhruv-Cmds/Personal-Life-Dashboard.git
+
+2. Navigate into the project directory:
+  ```
+  cd Personal-Life-Dashboard/backend
+  ```
+
+3. Install dependencies:
+
+pip install -r requirements.txt
+
+## Usage
+
+1. Run the backend server:
+  ```
+  python app.py
+  ```
+
+2. Open the frontend:
+
+Open frontend/index.html in your browser
+or
+  ```
+  Visit: http://127.0.0.1:5000/ (if integrated)
+  ```
 
 ## Screenshots
 
@@ -33,17 +75,24 @@ The primary focus is backend logic and system design.
 ![Backend](screenshots/backend-running.png)
 
 ## Project Structure
+
+```
 Personal-Life-Dashboard/
 │
 ├── backend/
-│ ├── app.py
-│ ├── logic.py
-│ └── requirements.txt
+│   ├── app.py
+│   ├── logic.py
+│   └── requirements.txt
 │
 ├── frontend/
-│ └── index.html
+│   └── index.html
 │
 ├── screenshots/
 │
 ├── README.md
 └── .gitignore
+```
+
+## Why This Project
+
+This project focuses on combining multiple real-life systems
