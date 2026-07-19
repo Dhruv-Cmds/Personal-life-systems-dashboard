@@ -36,8 +36,9 @@ These inputs are processed through a rule-based engine to compute:
 
 ## Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Dhruv-Cmds/Personal-Life-Dashboard.git
+  ```bash
+  git clone https://github.com/Dhruv-Cmds/Personal-life-systems-dashboard.git
+  ```
 
 2. Navigate into the project directory:
   ```
@@ -45,8 +46,9 @@ These inputs are processed through a rule-based engine to compute:
   ```
 
 3. Install dependencies:
-
-pip install -r requirements.txt
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 ## Usage
 
